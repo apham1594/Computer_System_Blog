@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Courier+Prime&family=Montserrat:wght@100&family=Noto+Serif+Display&family=Press+Start+2P&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <title>Computer Information Blog</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+     
+        </style>
+</head>
+<header>
+    <h1> Computer Network Fundamental </h1>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="software.html"> 3 Types of Software Application </a></li>
+        <li><a href="security.html"> Types of Harmful Threat to your computer</a></li>
+        <li><a href="network.html"> 7 Protocol Layers </a></li>
+    </ul>
+</header>
+<body>
+
+    <h2> 7 Protocol Layers of Networking </h2>
+    
+    <table>
+      <tr>
+        <th>Layer</th>
+        <th>OSI</th>
+        <th>TCP/IP</th>
+        <th> Data Unit </th>
+        <th> Application</th>
+        <th> Internet protocol Suites</th>
+        <th> Examples</th>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td> Application </td>
+        <td>Application</td>
+        <td>Data</td>
+        <td> Where Application and User communicate</td>
+        <td> HTTP, DNS, DHCP. FTP, Telnet, SSH, IMAP, NTP </td>
+        <td> Provides function to the user. Provides the service requested by the user</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td> Presentation </td>
+        <td> Application </td>
+        <td>Data</td>
+        <td> Formats data so the recieving application can understand it. Encrypts Data</td>
+        <td> RIP, SIP, BGP </td>
+        <td>  Converts different representations. Makes sure the data is usable and readable. Where encryption happens
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td> Session </td>
+        <td>Application</td>
+        <td>Data</td>
+        <td> Establishing or getting rid of connections between devices.</td>
+        <td>NTP, etc… </td>
+        <td>  Manages task dialogue. 
+            Maintains connections. Responsible for controlling ports and sessions.
+        </td>
+      </tr>
+      <tr>
+        <td>4 </td>
+        <td> Transport </td>
+        <td> Transport </td>
+        <td> Segments </td>
+        <td>Adds TCP/UDP to keep all the data and adds source port </td>
+        <td> TCP, UDP</td>
+        <td>  Provides end-to-end delivery</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td> Network </td>
+        <td> Internet</td>
+        <td>Packet</td>
+        <td> IP address and routing. Destination IP addresses are added. Routers are here.</td>
+        <td> IPv4, IPv6, ICMP, ICMPv6, etc… </td>
+        <td>  Sends packets over multiple links. Decides which physical path the data will take.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td> Data Link </td> 
+        <td> Network Access</td>
+        <td> Frames</td>
+        <td> Where Application and User communicate</td>
+        <td> MAC, ARP, Ethernet 802.3. CDP, LLDP, DSL, L2TP, </td>
+        <td>  Sends frames of information. Provides the format of data on the network </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td> Physical </td> 
+        <td> Network Access</td>
+        <td> Bits</td>
+        <td> Carries the data across physical hardware.</td>
+        <td> SONET/SDH, etc… </td>
+        <td> Sends bits as signals.Transmits raw bit stream over the physical hardware</td>
+      </tr>
+    </table>
+    <br>
+    <p> ** Acronym to remember Protocol Layers:</p>
+    <ol>
+        <li>OSI- Open Systems Interconnection model.</li>
+        <li>CP/IP- Transmission Control Protocol and Internet Protocol.</li>
+    </ol>
+    
+    </body>
+    </html>
+    
+    
